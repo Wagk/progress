@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>progress</title>
+    </head>
+    <body>
+        <style>
+         progress {
+            width: 500px;
+            height: 20px;
+            display: block;
+         }
+        </style>
+        <script src="bar.js"></script>
+
+        <div id="bar_collection">
+
+        </div>
+
+        <button onclick="progress('bar_collection')">Step</button>
+        <button onclick="add_bar('bar_collection')">Add Bar</button>
+        <button onclick="add_automatic_bar('bar_collection')">Add Automatic Bar</button>
+        <script type="text/javascript">window.setInterval(interval_update, 5000)</script>
+    </body>
+</html>
