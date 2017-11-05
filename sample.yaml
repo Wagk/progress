@@ -1,0 +1,4 @@
+bar:
+  ticks : 1
+  time per tick : 1
+  after : # event struct array
