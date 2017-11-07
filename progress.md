@@ -14,10 +14,23 @@ Progress bars in this case is probably analogous to functions
 
 # Serialization Syntax
 
-```
+``` json
 {
-    "id" : ...
+    "id"   : ...,
+    "type" : ...,
     "vars" : { ... },
-    "next" : [ ... ]
+    "next" : [ ... ],
+    "help" : [ ... ]
 }
 ```
+
+- id :: unique identifier for this bar
+- type :: category this bar belongs to
+- vars :: derivative-specific things that the bar tracks
+- next :: events that trigger once this bar (an event unto itself) completes
+- help :: events whose progress would be increase when this event is complete
+
+# Event types
+
+- Timed events :: events that progress strictly based on time
+- Probable events :: events that might trigger help stages and next stages (?)
