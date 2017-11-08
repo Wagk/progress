@@ -34,3 +34,6 @@ Progress bars in this case is probably analogous to functions
 
 - Timed events :: events that progress strictly based on time
 - Probable events :: events that might trigger help stages and next stages (?)
+
+Events *should* be interpolatable, ie. I should be able to simplify a chain of
+events past a point in time and expect a reasonably accurate result
